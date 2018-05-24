@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import {
+    View,
+    Text,
+    StyleSheet
+} from 'react-native';
 import CardListData from './CardDummyData.json';
 import CardStack from './CardStack';
 import Card from './common/Card';
@@ -14,9 +18,7 @@ class Main extends Component {
                 <CardStack
                     cardListData={CardListData}
                     renderCard={this.renderCard}
-                    renderLoadMoreCard={this.renderLoadMoreCard}
-                >
-                </CardStack>
+                    renderLoadMoreCard={this.renderLoadMoreCard} />
             </View>
         );
     }

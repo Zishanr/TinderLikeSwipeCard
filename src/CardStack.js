@@ -77,7 +77,6 @@ class CardStack extends Component {
                     {this.props.renderCard(cardItem)}
                 </View>
             )
-
         }).reverse();
     }
 
@@ -113,7 +112,6 @@ class CardStack extends Component {
         this.state.cardPosition.setValue({ x: 0, y: 0 });
         this.setState({ index: this.state.index + 1 });
     }
-
 }
 
 
